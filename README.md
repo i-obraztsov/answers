@@ -546,7 +546,7 @@
 
 49. Должны ли мы отдавать разные размеры картинок пользователям разных устройств? Если да, то как?
 
-    Должны. При помощи меда выражений и тёга `picture` и атрибута `srcste` у `img`;
+    Должны. При помощи медиа выражений и тега `picture` и атрибута `srcset` у `img`;
 
 ---
 
@@ -660,17 +660,17 @@
 
 ---
 
-
 58. Как найти элемент на странице с помощью JS и JQuery?
 
-    getElementById;
-    getElementsByTagName;
-    getElementsByName;
-    querySelectorAll;
-    querySelector;
+    - если у элемента есть `id` то его можно получить вызовом `document.getElementById()`
+    - чтобы получить все элементы на странице необходимо воспользоваться методом `document.querySelectorAll('css-selector')`
+    - `document.querySelector('css-selector')` - возвращает первый найденный элемент
+    - `document.getElementsByTagName(tag)` - ищет элементы по имени тега и возвращает их коллекцию. Передав `*` вместо тега, можно получить всех потомков.
+    - `document.getElementsByClassName(className)` - возвращает элементы, которые имеют данный CSS-класс.
+    - `document.getElementsByName(name)` - возвращает элементы с заданным атрибутом `name`.
 
 
-    $('.clasName');
+    $('selector');
 
 ---
 
